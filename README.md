@@ -1,4 +1,4 @@
-# AUFlix Trailer Browser
+# Netflix Trailer Browser
 
 Minimal Netflix-style trailer browser built with React + Vite.
 

@@ -1,6 +1,6 @@
 const TopBar = ({ query, onQueryChange }) => (
   <header className="top-bar">
-    <div className="logo">AUFlix</div>
+    <div className="logo">Netflix</div>
     <div className="search">
       <input
         type="search"

@@ -2,6 +2,17 @@ import { API_BASE_URL } from '../config.js';
 import { getDeviceId } from '../utils/device.js';
 
 const buildUrl = (path, query) => {
+  if (!API_BASE_URL) {
+    if (!query) return path;
+    const params = new URLSearchParams();
+    Object.entries(query).forEach(([key, value]) => {
+      if (value !== undefined && value !== null) {
+        params.set(key, String(value));
+      }
+    });
+    return `${path}?${params.toString()}`;
+  }
+
   const url = new URL(`${API_BASE_URL}${path}`);
   if (query) {
     Object.entries(query).forEach(([key, value]) => {
@@ -33,7 +44,14 @@ const request = async (path, { method = 'GET', query, body } = {}) => {
 
 export const getCatalog = async () => request('/api/catalog');
 
-export const getCatalogItem = async (id) => request(`/api/catalog/${id}`);
+export const getCatalogItem = async (id) => {
+  const catalog = await getCatalog();
+  const match = catalog.find((item) => String(item.id) === String(id));
+  if (!match) {
+    throw new Error('Catalog item not found');
+  }
+  return match;
+};
 
 export const saveHistory = async ({ videoId, progressSeconds }) =>
   request('/api/user/history', {

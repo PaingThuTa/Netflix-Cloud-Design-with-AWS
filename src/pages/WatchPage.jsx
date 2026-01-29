@@ -57,12 +57,7 @@ const WatchPage = () => {
         {errorMessage && <div className="banner error">{errorMessage}</div>}
         <div className="player">
           {trailer?.videoUrl ? (
-            <video
-              ref={videoRef}
-              controls
-              poster={trailer.posterUrl}
-              src={trailer.videoUrl}
-            />
+            <video ref={videoRef} controls src={trailer.videoUrl} />
           ) : (
             <div className="video-placeholder">Video source not available.</div>
           )}
