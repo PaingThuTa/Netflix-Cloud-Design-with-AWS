@@ -198,14 +198,6 @@ a {
   color: var(--muted);
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
 button {
   font-family: 'Space Grotesk', sans-serif;
   border: none;
@@ -232,22 +224,6 @@ button:disabled {
 button.ghost {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.history-list {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.history-card {
-  background: var(--panel);
-  border-radius: 18px;
-  padding: 1.2rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
 }
 
 .muted {
@@ -288,15 +264,5 @@ button.ghost {
 
   .hero {
     padding: 1.6rem;
-  }
-
-  .actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .history-card {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }

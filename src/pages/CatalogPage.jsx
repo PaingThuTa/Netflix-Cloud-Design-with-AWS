@@ -49,7 +49,7 @@ const CatalogPage = () => {
         <p className="hero-kicker">Tonight on Netflix</p>
         <h1>Fresh trailers, cinematic mood, zero friction.</h1>
         <p className="hero-tagline">
-          Browse, hit play, and keep your spot synced to every device.
+          Browse, hit play, and jump into the latest trailers.
         </p>
       </section>
 

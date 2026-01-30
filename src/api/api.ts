@@ -1,5 +1,4 @@
 import { API_BASE_URL } from '../config.js';
-import { getDeviceId } from '../utils/device.js';
 
 const buildUrl = (path, query) => {
   if (!API_BASE_URL) {
@@ -52,20 +51,3 @@ export const getCatalogItem = async (id) => {
   }
   return match;
 };
-
-export const saveHistory = async ({ videoId, progressSeconds }) =>
-  request('/api/user/history', {
-    method: 'POST',
-    body: {
-      deviceId: getDeviceId(),
-      videoId,
-      progressSeconds,
-    },
-  });
-
-export const getHistory = async () =>
-  request('/api/user/history', {
-    query: {
-      deviceId: getDeviceId(),
-    },
-  });

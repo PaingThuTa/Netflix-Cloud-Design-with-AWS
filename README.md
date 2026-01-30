@@ -16,5 +16,3 @@ Minimal Netflix-style trailer browser built with React + Vite.
 The frontend expects the backend to expose:
 - `GET /api/catalog` -> array of `{ id, title, posterUrl }`
 - `GET /api/catalog/:id` -> `{ id, title, posterUrl, videoUrl }`
-- `POST /api/user/history` with `{ deviceId, videoId, progressSeconds }` -> `{ ok: true }`
-- `GET /api/user/history?deviceId=...` -> array of `{ videoId, title, progressSeconds, updatedAt }`
