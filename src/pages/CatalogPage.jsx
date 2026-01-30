@@ -17,7 +17,7 @@ const CatalogPage = () => {
         setErrorMessage('');
         const data = await getCatalog();
         if (!Array.isArray(data)) {
-          throw new Error('Invalid catalog response');
+          throw new TypeError('Invalid catalog response');
         }
         setTrailers(data);
         setStatus('ready');
