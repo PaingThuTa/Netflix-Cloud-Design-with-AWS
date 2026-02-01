@@ -47,7 +47,7 @@ const CatalogPage = () => {
       <TopBar query={query} onQueryChange={setQuery} />
       <section className="hero">
         <p className="hero-kicker">Tonight on Netflix</p>
-        <h1>Fresh trailers, cinematic mood, zero friction.</h1>
+        <h1>EAD Project-02 demonstration</h1>
         <p className="hero-tagline">
           Browse, hit play, and jump into the latest trailers.
         </p>
