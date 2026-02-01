@@ -3,6 +3,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://dktwwce14odsr.cloudfront.net/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
