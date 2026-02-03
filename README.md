@@ -14,11 +14,11 @@ A Netflix-inspired trailer browser with a cloud-first architecture concept. This
 Below are the two pages of the architectural design used for this project.
 
 <p align="center">
-  <img src="EAD%20project02%20Architectural%20Design%20diagram%20-%20Page%201.png" alt="Architectural Design Diagram - Page 1" width="900" />
+  <img src="Page-1.png" alt="Architectural Design Diagram - Page 1" width="900" />
 </p>
 
 <p align="center">
-  <img src="EAD%20project02%20Architectural%20Design%20diagram%20-%20Page%202.png" alt="Architectural Design Diagram - Page 2" width="900" />
+  <img src="Page-2.png" width="900" />
 </p>
 
 ## Tech Stack
